@@ -107,7 +107,7 @@ p {
 .gallery__link {
   margin-top: 20px;
   margin-left: 20px;
-  max-width: 300px;
+  min-width: 300px;
   flex-basis: calc((100% - 80px) / 4);
   border: 3px solid rgb(249, 248, 247);
   
