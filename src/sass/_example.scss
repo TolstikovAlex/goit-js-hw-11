@@ -11,7 +11,7 @@ body {
   line-height: 1.5;
   color: rgb(126, 194, 253);
   margin: 0;
-  background-image: linear-gradient(-90deg, rgba(128, 199, 237, 0.9) 25%, rgba(252, 244, 84, 0.905) 75%);
+  background-image: linear-gradient(-90deg, rgba(247, 207, 172, 0.900) 10%, rgba(55, 37, 20, 0.875) 75%);
 }
 
 a {
@@ -28,7 +28,9 @@ p {
   padding-bottom: 10px;
   position: fixed;
   background-color: #02020d;
-  background-image: linear-gradient(-90deg, rgba(105, 187, 255, 0.9) 10%, rgba(3, 7, 81, 0.8) 90%);
+  box-shadow: 0 2px 4px rgba(253, 241, 241, 0.778), 0 0px 1px rgba(27, 14, 14, 0.915),
+      0 4px 1px rgba(155, 131, 131, 0.897);
+  background-image: linear-gradient(-90deg, rgb(84, 78, 74) 10%, rgba(185, 141, 108, 0.955) 90%);
   z-index: 1;
 }
 
@@ -105,17 +107,20 @@ p {
 .gallery__link {
   margin-top: 20px;
   margin-left: 20px;
-  min-width: 320px;
+  max-width: 300px;
   flex-basis: calc((100% - 80px) / 4);
-  border: 3px solid rgb(89, 91, 93);
+  border: 3px solid rgb(249, 248, 247);
+  
   border-radius: 6px;
   overflow: hidden;
-  transition: all 0.3s;
+  transition: all 0.6s;
 }
 
 .gallery__link:hover,
 .gallery__link:focus {
-  transform: scale(1.05);
+  transform: scale(1.03);
+  box-shadow:rgb(89, 91, 93);
+  box-shadow: 0px 14px 5px -5px rgba(202, 182, 160, 0.45);
 }
 
 .photo-card {
